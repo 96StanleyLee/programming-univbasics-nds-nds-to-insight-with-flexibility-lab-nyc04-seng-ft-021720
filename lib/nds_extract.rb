@@ -104,7 +104,7 @@ def movies_with_directors_set(source)
   i = 0 
   while i < source.length do 
     name = source[i][:name]
-    array.push()
+    array.push(movies_with_director_key)
 end
 
 # ----------------    End of Your Code Region --------------------
