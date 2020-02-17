@@ -53,7 +53,9 @@ def movies_with_director_key(name, movies_collection)
  i = 0 
  while i < movies_collection.length
  array.push(movie_with_director_name(name,movies_collection[i]))
- e
+ i += 1 
+ end 
+ array 
  
 end 
 
@@ -99,16 +101,6 @@ def movies_with_directors_set(source)
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
   
-  array = []
-  i = 0 
-  while i < source.length 
-    director_name = source[i][:name]
-    director_movies = source[i][:movies]
-    
-    array.push(movies_with_director_key(director_name, director_movies))
-    i += 1
-  end 
-  array
 end
 
 # ----------------    End of Your Code Region --------------------
