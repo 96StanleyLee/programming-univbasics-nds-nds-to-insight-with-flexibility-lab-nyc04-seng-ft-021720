@@ -83,6 +83,7 @@ while i < x.length do
   end
   i += 1  
 end 
+new_hash
   
 end
 
