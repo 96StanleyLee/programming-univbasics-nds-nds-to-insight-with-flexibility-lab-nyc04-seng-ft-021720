@@ -107,6 +107,7 @@ def movies_with_directors_set(source)
     array.push(movies_with_director_key(name,source[i]))
     i +=1 
   end 
+  array
 end
 
 # ----------------    End of Your Code Region --------------------
