@@ -88,7 +88,19 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
-  
+new_hash = {}
+x = source
+i = 0 
+while i < x.length do 
+  name = x[i][:studio]
+  if new_hash[name]
+    new_hash[name] += x[i][:worldwide_gross]
+  else 
+    new_hash[name] = x[i][:worldwide_gross]
+  end
+  i += 1  
+end 
+new_hash
 end
 
 # ----------------    End of Your Code Region --------------------
